@@ -1,0 +1,56 @@
+<!-- ZAD. 1 i 2-->
+
+<div *ngIf="pokaz">
+  Dane ukryte
+</div>
+
+<div *ngIf="!pokaz">
+  Nazywam się <input type="text" id="guzik">
+</div>
+
+<button (click)="ukryj()">Pokaż</button>
+
+<hr>
+
+<!-- ZAD. 3 -->
+
+<div>
+  <ol>
+    <li *ngFor="let x of kursy">{{x}}</li>
+  </ol>
+</div>
+
+<hr>
+
+<div>
+  <table [style]="krawedzie">
+    <tr *ngFor="let x of kursy">{{x}}</tr>
+  </table>
+</div>
+
+<hr>
+<!-- ZAD. 4 -->
+
+<div [ngSwitch]="opcja">
+  <p *ngSwitchCase="0">opcja1</p>
+  <p *ngSwitchCase="1">opcja2</p>
+  <p *ngSwitchCase="2">opcja3</p>
+  <p *ngSwitchDefault>opcja4</p>
+</div>
+
+<br>
+
+<hr>
+
+<!-- ZAD. 5 -->
+
+
+<div>
+  Imie duzymi literami: {{imieZduzej}}
+</div>
+
+<hr>
+<!-- ZAD. 6 -->
+<app-syn>dziala</app-syn>
+
+  
